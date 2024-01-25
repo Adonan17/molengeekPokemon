@@ -8,11 +8,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background: url("./../assets/image/background.png");
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* HEADER */
 /* RESPONSIVE */
 /* MAIN */
+#startGame {
+  margin: 0 auto;
+}
+#startGame .nes-btn {
+  height: 80px;
+  width: 200px;
+}
+
 /* RESPONSIVE */
 /* FOOTER */
 /* RESPONSIVE */
