@@ -7,16 +7,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   height: 100vh;
   width: 100vw;
-  background: url("./../assets/image/background.png");
+  background: url("./../assets/image/background3.gif");
   background-position: center;
   background-size: 110%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 /* HEADER */
@@ -24,10 +24,112 @@ body {
 /* MAIN */
 #startGame {
   margin: 0 auto;
+  display: none;
 }
-#startGame .nes-btn {
+#startGame .startMenuBtn {
   height: 80px;
   width: 200px;
+  border-radius: 5px;
+  border: none;
+  background: hsl(340, 100%, 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+#startGame .front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345, 100%, 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+#startGame .startMenuBtn:active .front {
+  transform: translateY(-2px);
+}
+#startGame .startMenuBtn:focus {
+  outline: 0;
+}
+
+#pokedex {
+  background: rgba(224, 170, 255, 0.8);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 450px;
+  width: 800px;
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+}
+#pokedex #pokedexChoices {
+  height: 363px;
+  width: 490px;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  background-color: rgba(60, 9, 108, 0.4);
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: scroll;
+  justify-content: center;
+}
+#pokedex #pokedexChoices .singlePokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  font-size: 10px;
+  transition: 0.2s;
+}
+#pokedex #pokedexChoices .singlePokemon:hover img {
+  height: 120px;
+}
+#pokedex #pokedexChoices .singlePokemon:hover img img {
+  height: 90px;
+}
+#pokedex #pokedexImage {
+  position: absolute;
+  right: 40px;
+  top: 14px;
+  height: 137px;
+  width: 200px;
+  background-color: rgba(60, 9, 108, 0.4);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#pokedex #pokedexImage img {
+  height: 150px;
+}
+#pokedex #pokedexDescription {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+  right: 40px;
+  bottom: 73px;
+  height: 170px;
+  width: 200px;
+  overflow: scroll;
+  background-color: rgba(60, 9, 108, 0.4);
+}
+#pokedex .pokedexConfirmBtn {
+  position: absolute;
+  right: 290px;
+  bottom: 25px;
+  height: 35px;
+  width: 119px;
+  font-size: 10px;
 }
 
 /* RESPONSIVE */
