@@ -3,54 +3,76 @@
 //start menu
 #startGame
     margin: 0 auto
-    display: none
-    .startMenuBtn
-        height: 80px
-        width: 200px
-        border-radius: 5px
-        border: none
-        background: hsl(340deg 100% 32%)
-        border-radius: 12px
-        border: none
-        padding: 0
-        cursor: pointer
-        outline-offset: 4px
-    .front 
-        display: block
-        padding: 12px 42px
-        border-radius: 12px
-        font-size: 1.25rem
-        background: hsl(345deg 100% 47%)
-        color: white
-        transform: translateY(-6px)
-    .startMenuBtn:active .front 
-        transform: translateY(-2px)
-    .startMenuBtn:focus
-        outline: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 300px
+    width: 500px
+    border-radius: 50px
+    gap: 20px
+    transition: 0.4s
+    box-shadow: rgba(58, 12, 100, 0.9) 8px 8px
+    background-color: rgba(157, 78, 221, 0.8)
+    border: #E0AAFF solid 4px
+    position: relative
+    img
+        height: 200px
+        position: absolute
+        right: 20px
+    
+.menuBtn
+    border: none
+    width: 350px
+    background: rgba(58, 12, 100, 0.9)
+    border-radius: 12px
+    padding: 0
+    cursor: pointer
+    outline-offset: 4px
+    position: absolute
+    bottom: 10px
+.front 
+    display: block
+    padding: 12px 42px
+    border-radius: 12px
+    font-size: 1.25rem
+    background: rgba(157, 78, 221, 0.8)
+    color: white
+    transform: translateY(-6px)
+.menuBtn:active .front 
+    transform: translateY(-2px)
+.menuBtn:focus
+    outline: 0
 
 #pokedex
     // background-image: url('./../assets/image/pokedex.png')
-    background: rgba(224, 170, 255, 0.8)
+    background: rgba(157, 78, 2210, 0.8)
     background-size: 100%
     background-repeat: no-repeat
-    height: 450px
+    height: 470px
     width: 800px
     border-radius: 10px
-    display: flex
+    display: none
     position: absolute
+    box-shadow: rgba(58, 12, 100, 0.9) 12px 12px
+    // border: rgba(224, 170, 255, 0.7) solid 4px
+    .menuBtn
+        left: 14px
+        font-size: 15px
+        width: 200px
     #pokedexChoices
         height: 363px
         width: 490px
         position: absolute
         top: 14px
         left: 12px
-        background-color: rgba(60, 9, 108, 0.4)
+        background-color: rgba(224, 170, 255, 0.7)
         display: flex
         border-radius: 10px
         flex-wrap: wrap
         gap: 10px
         overflow: scroll
         justify-content: center
+        box-shadow: rgba(58, 12, 100, 0.9) 8px 8px
         .singlePokemon
             display: flex
             justify-content: center
@@ -69,11 +91,12 @@
         top: 14px
         height: 137px
         width: 200px
-        background-color: rgba(60, 9, 108, 0.4)
+        background-color: rgba(224, 170, 255, 0.7)
         display: flex
         border-radius: 10px
         justify-content: center
         align-items: center
+        box-shadow: rgba(58, 12, 100, 0.9) 8px 8px
         img
             height: 150px
     #pokedexDescription
@@ -85,11 +108,12 @@
         font-size: 10px
         color: white
         right: 40px
-        bottom: 73px
+        bottom: 95px
         height: 170px
         width: 200px
         overflow: scroll
-        background-color: rgba(60, 9, 108, 0.4)
+        background-color: rgba(224, 170, 255, 0.7)
+        box-shadow: rgba(58, 12, 100, 0.9) 8px 8px
     .pokedexConfirmBtn
         position: absolute
         right: 290px
