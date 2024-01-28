@@ -1,4 +1,7 @@
 /* MAIN */
+@font-face
+    font-family: "PressStart2P-Regular"
+    src: url("../assets/fonts/PressStart2P-Regular.ttf")
 
 //start menu
 #startGame
@@ -70,7 +73,7 @@
         border-radius: 10px
         flex-wrap: wrap
         gap: 10px
-        overflow: scroll
+        overflow: auto
         justify-content: center
         box-shadow: rgba(58, 12, 100, 0.9) 8px 8px
         .singlePokemon
@@ -111,7 +114,7 @@
         bottom: 95px
         height: 170px
         width: 200px
-        overflow: scroll
+        overflow: auto
         background-color: rgba(224, 170, 255, 0.7)
         box-shadow: rgba(58, 12, 100, 0.9) 8px 8px
     .pokedexConfirmBtn
@@ -121,6 +124,43 @@
         height: 35px
         width: 119px
         font-size: 10px
+    
+#game
+    height: 470px
+    display: none
+    width: 800px
+    box-shadow: rgba(58, 12, 100, 0.9) 8px 8px
+    border-radius: 10px
+    background-image: url("./../assets/image/gamebackground.png")
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    .myPokemonDiv
+        height: 200px
+        width: 200px
+        position: absolute
+        left: 110px
+        bottom: 0px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            height: 200px
+            width: 200px
+    .ennemyPokemonDiv
+        height: 120px
+        width: 120px
+        position: absolute
+        right: 150px
+        bottom: 150px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            height: 130px
+            width: 130px
+
+
 
 /* RESPONSIVE */
 @media (max-width: 576px)
