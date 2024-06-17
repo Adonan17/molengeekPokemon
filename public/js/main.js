@@ -4,6 +4,8 @@ export const pokemonCount = 151;
 export var pokedex = {};
 export let chosen = false
 
+// wesh le sang
+
 window.onload = async function() {
     getPokemon(1);
 
